@@ -1,0 +1,267 @@
+/*BODY Y TAGS ESTILOS----------------------------------------------------------------------->*/
+body{
+    background-color: rgb(27, 27, 27);
+    font-family:'Share Tech Mono', monospace;
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+    transition: ease 500ms all;
+}
+a:hover{
+    color: chartreuse;
+}
+h1,h2, h3, h4{
+    color: blanchedalmond;
+    font-style: italic;
+    text-align: center;
+}
+h1:hover, h2:hover{
+    color: rgb(68, 192, 68);
+}
+div.div_1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+p.seleccion:hover{
+    color: brown;
+    cursor: pointer;
+    text-align: center;
+}
+p.pNo{
+    color: grey;
+    text-align: center;
+    cursor: pointer;
+}
+p.pNo:hover{
+    color: rgb(185, 185, 185);
+}
+div.divInicioBis{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+/*FOOTER-------------------------------------------------------------------------------------->*/
+footer {
+    background: radial-gradient(circle, black 0%, #112402 100%, #194d0f 100%);
+    height: auto;
+    width: 100%;
+    margin-top: 10%;
+  }
+  
+  div.pieDeFooter {
+    background-color: black;
+    height: auto;
+    width: 100%;
+  }
+  
+  p.tituloDeFooter {
+    color: white;
+    text-align: center;
+    /*position: relative;*/
+  }
+/*boton estilo----------------------------------------------------------------------------->*/
+button.boton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(27, 27, 27); 
+    color: white; 
+    border: 2px solid #5fbe60;
+}
+
+  .boton:hover {
+    background-color: #5fbe60;
+    color: black;
+  }
+  .divBtn{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+  }
+  /*fin de botonones------------------------------------------->*/
+ /* button.boton:hover{
+    background-color: rgb(155, 35, 14);
+}*/
+/*divs juego ADIVINADOR--------------------------------------------------->*/
+div.divTerminar{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+div.divInsideDiv{
+    width: auto;
+    height: 16vh ;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: black ;
+    border: solid #5fbe60 5px;
+}
+.formFacil{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.inputFacil{
+    margin-top: 3%;
+    justify-self: center;
+    align-self: center;
+}
+.inputClass{
+    width: 50%;
+    height: 10vh;
+    font-size: 25px;
+
+}
+div#divTexto{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+div.canvas-rtas{
+    width: 100%;
+    height: 10vh;
+    background: none;
+}
+
+/*HEADER--------------------------------------------------------------------->*/
+.headerCss{
+    width: 100%;
+    height: 20vh;
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.figureLogo{
+width: 50%;
+height: 100vh;
+overflow: hidden;
+margin-left: 30%;
+}
+.imagenLogo{
+    width: 200px;
+    height: 118px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.imagenLogo:hover{
+    transform: scale(1.2);
+}
+#divTexto{
+    margin-top: 10%;
+}
+/*CSS SNAKE------------------------------------------------------------------------------------>*/
+div.divSnakeGame{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+/*ESTILOS DE INTERFAZ------------------------------------------>*/
+#board, .boardInfo {
+    max-width: 500px;
+}
+#board, .boardInfo {
+    margin-left: 25%;
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+    color: #94ff94;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 75px;
+    position: absolute;
+    margin-left: 27%;
+}
+
+.boardInfo {
+    display: flex;
+    color: white;
+    font-family:  'Share Tech Mono', monospace;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(27, 27, 27); 
+    color: white; 
+    border: 2px solid #5fbe60;
+}
+#start:hover{
+    background-color: #5fbe60;
+    color: black;
+}
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: black;
+}
+
+.snakeSquare {
+    background-color: rgb(0, 197, 16);
+}
+
+.foodSquare {
+    background-color: white;
+}
